@@ -8,13 +8,24 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <form id="myForm" onsubmit="return addBookToLibrary()">
-            <input type="text" name="author" id="author" placeholder="author" hidden>
-            <input type="text" name="title" id="title" placeholder="title" hidden >
-            <input type="number" name="pages" id="pages" placeholder="pages" hidden>
-            <button type="submit" id="submit" hidden> Submit</button>
-    </form>
-    <button class="new-book">Add New Book</button>
+    <container>
+        <button class="new-book">Add New Book</button>
+        <div class="books" id="books"></div>
+    </container>   
+    <div class="modal" id="modal">
+        <div class="modal-content" >
+            <span class="close" > 
+                <form id="myForm" >
+                    <input class="title" type="text" name="title" id="title" placeholder="Title"  >
+                    <input class="author" type="text" name="author" id="author" placeholder="Author" >
+                    <input class="pages" type="number" name="pages" id="pages" placeholder="Pages" minlength="1" maxlength="1000">
+                    <label for="status">Have you read it?</label>
+                    <input type="checkbox" name="status" id="status">
+                    <button type="button" id="submit"> Submit</button>
+                </form>
+            </span>
+        </div>
+    </div>
     <div id="display" style='display:none;'></div>
 
     <script type="text/javascript" src="library.js"></script>
