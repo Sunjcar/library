@@ -1,3 +1,44 @@
+@font-face {
+  font-family: "Marcellus-regular";
+  src: url(fonts/MarcellusSC-Regular.ttf);
+}
+
+*{
+  margin:0
+}
+body{
+  background: lightslategray;
+}
+
+header{
+  display:flex;
+  padding: 3rem;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  font-family: "Marcellus-regular", sans-serif;
+  font-size: 2rem;
+  background: white;
+}
+header .picture{
+  height:4rem;
+  width:4rem;
+}
+.picture{
+  background:url(images/library-svgrepo-com.svg) center center / cover no-repeat;
+
+}
+
+
+container{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+container .material-symbols-outlined{
+ font-size: 3rem;
+ margin-top: 1rem;
+}
 .books{
     display:grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -6,30 +47,30 @@
 }
 
 .books .cards{
-    width:200px;
-    height:200px;
-    background-color: lightblue;
+    background: linear-gradient(45deg, lightgray, white);
     font-size: 20px;
-    border-radius: 10px;
+    border-radius: .7rem;
     padding:10px;
     gap:10px;
     display:flex;
-    flex-direction: column;
+    flex-direction:column;
     justify-content: center;
     align-items: center;
+    box-shadow:0 20px 20px -12px rgb(17, 17, 17, 0.2);
+    z-index: 3;
+    margin:2rem;
 }
 
 
 
 .modal {
-    display: none; /* Hidden by default */
+    display: none;
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
+    left: 0%;
+    top: 0%;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   }
@@ -61,8 +102,20 @@ input{
 
 
 button{
+    margin-top: 1rem;
     width:11rem;
     padding:10px;
-    border-radius: 1rem;
+    border-radius: .7rem;
     background-color: lightgreen;
+}
+
+.new-book{
+  background:slategray ;
+  border: #fefefe;
+  box-shadow:0 8px 8px -4px rgb(17, 17, 17, 0.2);
+}
+
+button:hover{
+  filter: brightness(1.1);
+    outline: none;
 }
