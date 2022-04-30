@@ -57,7 +57,7 @@ container .material-symbols-outlined{
     justify-content: center;
     align-items: center;
     box-shadow:0 20px 20px -12px rgb(17, 17, 17, 0.2);
-    z-index: 3;
+    z-index: 1;
     margin:2rem;
 }
 
@@ -66,7 +66,7 @@ container .material-symbols-outlined{
 .modal {
     display: none;
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 2; /* Sit on top */
     left: 0%;
     top: 0%;
     width: 100%; /* Full width */
