@@ -62,7 +62,6 @@ container .material-symbols-outlined{
 }
 
 
-
 .modal {
     display: none;
     position: fixed; /* Stay in place */
@@ -118,4 +117,26 @@ button{
 button:hover{
   filter: brightness(1.1);
     outline: none;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  gap: 10px;
+  margin-top:1rem;
+}
+
+.fa-github {
+  font-size: 30px;
+  transition: 0.3s ease-in-out;
+  color: black;
+}
+.fa-github:hover {
+  transform: rotate(720deg) scale(1.5);
 }
